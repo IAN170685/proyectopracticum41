@@ -139,7 +139,7 @@ class PacienteController extends Controller
             'fecha' => 'required|date',
             'hora' => 'required|time',
             'medico_id' => 'required|exists:medicos,id',
-            'paciente_id' => 'required|exists:pacientes,idPaciente', // Ajustar idPaciente
+            'paciente_id' => 'required|exists:pacientes,idPaciente', 
         ]);
 
         $cita->update($request->all());
